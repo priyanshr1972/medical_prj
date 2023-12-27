@@ -28,6 +28,52 @@
     </div>
     <!-- Preloader -->
     <!-- HEADER SECTION -->
+    <style>
+        .header-con {
+          transition: background-color 0.3s ease; /* Add a smooth transition effect */
+          color: white;
+        }
+  
+        .header-fixed {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          padding: 1vw;
+          z-index: 1000;
+          background-color: #2cbc57;
+          margin: auto;
+          color: white;
+        }
+  
+        .header-transparent {
+          background-color: transparent;
+          color: white;
+        }
+      </style>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var header = document.querySelector(".header-con");
+          var scrollPosition = window.scrollY;
+  
+          function onScroll() {
+            scrollPosition = window.scrollY;
+  
+            if (scrollPosition > 0) {
+              header.classList.add("header-fixed");
+              header.classList.remove("header-transparent");
+            } else {
+              header.classList.remove("header-fixed");
+              header.classList.add("header-transparent");
+            }
+          }
+  
+          // Listen for the scroll event
+          window.addEventListener("scroll", onScroll);
+  
+          // Call onScroll initially to set the initial state based on page load
+          onScroll();
+        });
+      </script>
     <header class="w-100 float-left header-con">
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navbar-light p-0">

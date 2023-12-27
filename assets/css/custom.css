@@ -25,7 +25,7 @@ body {
 }
 
 .header-con .navbar-light .navbar-nav .nav-link {
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .header-con .navbar-light .navbar-nav .nav-item::after {
@@ -68,7 +68,7 @@ body {
 .phone span {
     font-size: 18px;
     margin-bottom: 5px;
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .phone a {
@@ -76,7 +76,7 @@ body {
     font-weight: 700;
     line-height: 22px;
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .phone a:hover {
@@ -741,7 +741,7 @@ body {
 }
 
 .contact-form {
-    background: #243ffa;
+    background: red;
     border-radius: 10px;
     width: 59%;
     padding: 75px 63px 76px;
